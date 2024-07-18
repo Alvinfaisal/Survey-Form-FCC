@@ -1,0 +1,181 @@
+/* Import font */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+/* Remove default style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background: linear-gradient(transparent, rgb(255, 162, 162)),
+    url("../Assets/image/survey-background.png") no-repeat center, lightblue;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Lato", sans-serif;
+}
+
+/* Header */
+.header {
+  /* Alignment */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+
+  margin: 4rem 0;
+}
+
+/* Header h2 */
+.header > h2 {
+  font-size: 4.6rem;
+  font-weight: 500;
+}
+
+/* Header p */
+.header > p {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.form-container {
+  /* Size */
+  width: 60%;
+  margin: 0 auto;
+  padding: 4rem;
+
+  /* Layouting with grid */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "name"
+    "email"
+    "age"
+    "role"
+    "recomend"
+    "feature"
+    "improve"
+    "comment"
+    "submit";
+  gap: 2rem;
+
+  /* Typography */
+  font-size: 2rem;
+
+  /* Color */
+  background-color: rgba(18, 17, 33, 0.8);
+  color: #fff;
+
+  /* Border */
+  border-radius: 10px;
+}
+
+input,
+select {
+  /* width: 100%; */
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+}
+
+/* Styling individual input field */
+.form-name {
+  grid-area: name;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-email {
+  grid-area: email;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-age {
+  grid-area: age;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-role {
+  grid-area: role;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-recomend {
+  grid-area: recomend;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-recomend label {
+  margin-left: 10px;
+}
+
+.form-feature {
+  grid-area: feature;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-improved {
+  grid-area: improve;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-improved label {
+  margin-left: 10px;
+}
+
+.form-comment {
+  grid-area: comment;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-comment textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+}
+
+.form-submit {
+  grid-area: submit;
+  display: flex;
+  flex-direction: row;
+}
+
+.btn-submit {
+  background-color: #37af65;
+  color: #fff;
+  width: 100%;
+  font-size: 2rem;
+  padding: 1rem;
+  margin-bottom: 4rem;
+}
+
+/* Make responsive */
+@media (max-width: 480px) {
+  html {
+    font-size: 5px;
+  }
+}
