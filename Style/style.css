@@ -178,4 +178,8 @@ select {
   html {
     font-size: 5px;
   }
+
+  .form-container {
+    width: 80%;
+  }
 }
